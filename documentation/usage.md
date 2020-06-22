@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Usage
-description: Instructions on using this theme
+description: Demonstration of the theme
 show_in_menu: true
 ---
 
@@ -26,7 +26,6 @@ Do not remove this part. For most part, you only need to change `title` and `des
 
 * Adding or updating pages can be done by git clone-edit-push approach or simply editing the markdown files in the browser on GitHub.
 * Keep titles as short as possible. Try to keep it to one line in the table-of-contents.
-* Use all lowercase for all filenames, links etc.
 * H1 headings are reserved for page titles. The highest level to be used in the document is H2.
 * Linking headings causes issues with the table-of-contents.
 
