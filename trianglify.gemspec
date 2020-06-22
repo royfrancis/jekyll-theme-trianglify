@@ -2,13 +2,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-docs-theme"
+  spec.name          = "trianglify"
   spec.version       = "1.0.0"
-  spec.authors       = ["Vladimir 'allejo' Jimenez"]
-  spec.email         = ["me@allejo.io"]
+  spec.authors       = ["Roy Francis"]
+  spec.email         = ["roymathewfrancis@gmail.com"]
 
   spec.summary       = "A Jekyll Gem-based Theme for hosting documentation style websites"
-  spec.homepage      = "https://github.com/allejo/jekyll-docs-theme"
+  spec.homepage      = "https://github.com/royfrancis/trianglify"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
@@ -18,6 +18,5 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.5"
-
   spec.add_development_dependency "bundler", "~> 2.1"
 end

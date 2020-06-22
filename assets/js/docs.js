@@ -46,4 +46,12 @@ $(function() {
             $('html > head').append(style);
         }
     }
+
+    // anchors
+    $('h1[id], h2[id], h3[id], h4[id], h5[id]').each(function() {
+      if ($(this).children('.anchor-link').length === 0) {
+        $(this).prepend('<a href="#' + this.id + '" class="anchor-link">§</i>');
+      }
+    });
+
 });

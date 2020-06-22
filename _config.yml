@@ -1,10 +1,9 @@
-# name of the software
-name: Jekyll Docs Theme
+name: Trianglify
 
 project:
   version: 1.0.0
-  download_url: https://github.com/allejo/jekyll-docs-theme/releases
-  download_text: Download
+  download_url:
+  download_text:
 
 license:
   software: MIT License
@@ -15,29 +14,29 @@ license:
 
 links:
   header:
-    - title: GitHub
-      icon: github
-      brand: true
-      url: https://github.com/allejo/jekyll-docs-theme
+    - title:
+      icon:
+      brand: false
+      url:
   homepage:
     - title: View on GitHub
       icon: github
       brand: true
-      url: https://github.com/allejo/jekyll-docs-theme
+      url: https://github.com/royfrancis/trianglify
   footer:
-    - title: GitHub
+    - title: Trianglify
       icon: github
       brand: true
-      url: https://github.com/allejo/jekyll-docs-theme
+      url: https://github.com/royfrancis/trianglify
     - title: Issues
       icon: bug
-      url: https://github.com/allejo/jekyll-docs-theme/issues?state=open
+      url: https://github.com/royfrancis/trianglify/issues
 
 ui:
-  mode: 'auto' # 'auto', 'dark', 'light'
+  mode: 'light' # 'auto', 'dark', 'light'
   brand:
     dark: "#00ceff"
-    light: "#a20000"
+    light: "#4C979F"
   border_color:
     dark: "#5f5f5f"
     light: "#dee2e6"
@@ -47,20 +46,21 @@ ui:
       color1: "#062a48"
       color2: "#304e67"
     light:
-      color1: "#080331"
-      color2: "#673051"
+      color1: "#81b6bb"
+      color2: "#4C979F"
   masthead:
     color:
       dark: "#fff"
       light: "#fff"
     align:
-      homepage: 'center'
+      homepage: 'left'
       page: 'left'
 
 social:
   github:
-    user: allejo
-    repo: jekyll-docs-theme
+    enabled: false
+    user:
+    repo:
   twitter:
     enabled: false
     via:
@@ -71,7 +71,7 @@ social:
     profileUrl:
 
 analytics:
-  google: UA-123456-1
+  google:
 
 # Build settings
 markdown: kramdown

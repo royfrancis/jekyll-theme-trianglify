@@ -1,22 +1,14 @@
-# Jekyll Docs Theme
+# Trianglify
 
-[![Gem](https://img.shields.io/gem/v/jekyll-docs-theme)](https://rubygems.org/gems/jekyll-docs-theme)
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/allejo/jekyll-docs-theme?include_prereleases)](https://github.com/allejo/jekyll-docs-theme/releases)
-[![GitHub license](https://img.shields.io/github/license/allejo/jekyll-docs-theme)](https://github.com/allejo/jekyll-docs-theme/blob/master/LICENSE.md)
-
-A Jekyll theme inspired by Bootstrap's official documentation theme from a few years back. This theme started off by stealing all of Bootstrap Docs' CSS and being used in [mistic100's theme](https://github.com/mistic100/jekyll-bootstrap-doc). This theme has since be rewritten from scratch and remains solely inspired by the original design.
-
-This theme is designed for writing documentation websites instead of having large unmaintainable README files or several markdown files inside of a folder in a repository.
-
-## Screenshots
-
-**Light Mode**
+A Jekyll theme based on [this](https://github.com/allejo/jekyll-docs-theme). View the demo [here](https://royfrancis.github.io/jekyll-docs-theme).
 
 ![Theme Screenshot](./screenshot.png)
 
-**Dark Mode**
+To use this theme, add this line to your Jekyll site's `_config.yml`:
 
-![Theme Screenshot](./screenshot-dark.png)
+```yaml
+remote_theme: royfrancis/trianglify@v{{ site.project.version }}
+```
 
 ## License
 

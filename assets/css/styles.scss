@@ -41,3 +41,187 @@ $site-ui-masthead-color-light: {{ site.ui.masthead.color.light | default: '#fff'
 // Utilities
 @import 'utilities/colors';
 @import 'utilities/js';
+
+// Custom CSS
+// Roy Francis
+
+/* define font */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i|Ubuntu+Mono&display=swap&subset=latin-ext');
+
+:root {
+  --color-primary: #4C979F;
+  --color-border: #dedede;
+  --color-text: #424949;
+  --color-code-bg:  #F7F7F7;
+  --color-code-inline: #5d6d7e;
+  --color-boxy-bg: #fbfcfc;
+  --font-base: 'Source Sans Pro';
+  --font-highlight: 'Source Sans Pro';
+  --font-code: 'Ubuntu Mono';
+}
+
+body,p,h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-base, 'Roboto', 'DIN', 'Helvetica', sans-serif);
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-highlight, 'Roboto', 'DIN', 'Helvetica', sans-serif);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.802em;
+}
+
+h2 {
+  font-size: 1.602em;
+}
+
+h3 {
+  font-size: 1.424em;
+}
+
+h4 {
+  font-size: 1.266em;
+}
+
+h5 {
+  font-size: 1.266em;
+}
+
+h6 {
+  font-size: 1.125em;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+.site-masthead h1,
+.site-masthead h2,
+.site-masthead h3,
+.site-masthead h4,
+.site-masthead h5,
+.site-masthead h6,
+.site-masthead p,
+.site-masthead body {
+  color: #FFF;
+}
+
+.site-masthead h1 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  line-height: 1em;
+}
+
+.site-masthead p {
+  font-size: 1.2em;
+  margin: 0;
+  line-height: 1.3em;
+}
+
+.page-sidebar {
+  font-size: 0.94em;
+  line-height: 1.4em;
+}
+
+.page-sidebar ul a.active, .page-sidebar ul a.active:focus, .page-sidebar ul a.active:hover {
+    background-color: #F7F7F7;
+}
+
+/* code style */
+pre {
+  font-family: var(--font-code,"Menlo","Monaco", "Consolas","Liberation Mono", "Courier New", monospace);
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  font-size: 16px;
+  padding: 0.5em;
+  border-radius: 3px;
+}
+
+code {
+  font-family: var(--font-code,"Menlo","Monaco", "Consolas","Liberation Mono", "Courier New", monospace);
+  font-size: 16px;
+  word-break: break-all;
+}
+
+// title anchors
+.anchor-link {
+  opacity: 0;
+  position: absolute;
+  margin-left: -0.8em;
+  padding-right: 0em;
+  font-size: 0.8em;
+  line-height: 1.9em;
+  color: #999;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.anchor-link:hover {
+  text-decoration: none;
+}
+
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link {
+  opacity: 1;
+}
+
+// fontawesome
+.fas {
+  font-size: 90%;
+  color: #FFCC00;
+}
+
+.scope-markdown h2 {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 1em;
+  padding-bottom: 0;
+}
+
+.scope-markdown h3 {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0.1em;
+}
+
+.scope-markdown h4,
+.scope-markdown h5,
+.scope-markdown h6 {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0em;
+}
+
+.site-footer__summary p {
+  font-size: 0.8rem;
+}
+
+.logo {
+  width: 45px;
+}
+
+// tables
+
+table {
+  border-radius: 4px;
+  -ms-box-shadow: 1px 1px 6px #E0E0E0;
+  -o-box-shadow: 1px 1px 6px #E0E0E0;
+  -webkit-box-shadow: 1px 1px 6px #E0E0E0;
+  -moz-box-shadow: 1px 1px 6px #E0E0E0;
+  box-shadow: 1px 1px 6px #E0E0E0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+th {
+  color: var(--color-primary);
+}
