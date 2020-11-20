@@ -7,7 +7,7 @@ show_in_menu: true
 
 ## Structure
 
-All content lives inside the **[hash]/documentation** directory. All files are markdown ending in **.md**.
+All content lives inside the **documentation** directory. All files are markdown ending in **.md**.
 
 The markdown files have a top YAML matter which looks like below:
 
@@ -45,7 +45,7 @@ H1 headings are reserved for page titles. Withing the document, start with H2 he
 
 Paragraphs are separated by a blank line.
 
-2nd paragraph. This `ìtalic` becomes *Italic*, this `**bold**` becomes **bold**, and this `\`monospace\`` becomes `monospace`.
+2nd paragraph. This `*ìtalic*` becomes *Italic*, this `**bold**` becomes **bold**, and this `` `monospace` `` becomes `monospace`.
 
 Itemized lists/Bullet points (Unordered list) looks like this
 
@@ -81,18 +81,21 @@ Block quotes are written like this.
 
 There are three different dashes. `-` becomes -. `--` becomes -- (en-dash) and `---` becomes --- (em-dash). Use 2 dashes for ranges (ex., "it's all
 in chapters `12--14` 12--14"). Three dots ... will be converted to an ellipsis.
+
+...
+
 Unicode is supported. ☺
 
 Code blocks can be created using triple backtick blocks or four space indents.
 
+````
 ```
-\`\`\`
 # Let me re-iterate ...
 for i in 1 .. 10 {
   do-something(i)
 }
-\`\`\`
 ```
+````
 
 ```
 # Let me re-iterate ...
@@ -115,7 +118,18 @@ or four spaces from the left.
       do-something(i)
     }
 
-Tilda can also be used instead of bacticks. `~~~`. Language can be added as well like `~~~python`.
+Tilda can also be used instead of backticks. `~~~`. Language can be added as well like `~~~python`.
+
+````
+~~~python
+import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+~~~
+````
 
 ~~~python
 import time
