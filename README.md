@@ -1,6 +1,6 @@
 # Trianglify
 
-A Jekyll theme based on [this](https://github.com/allejo/jekyll-docs-theme). View the demo [here](https://royfrancis.github.io/trianglify).
+A Jekyll theme based on [this](https://github.com/allejo/jekyll-docs-theme). View the demo [here](https://royfrancis.github.io/jekyll-theme-trianglify).
 
 ![Theme Screenshot](./screenshot.png)
 
