@@ -7,7 +7,7 @@ A Jekyll theme based on [this](https://github.com/allejo/jekyll-docs-theme). Vie
 To use this theme, add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-remote_theme: royfrancis/trianglify@v{{ site.project.version }}
+remote_theme: royfrancis/jekyll-theme-trianglify@v{{ site.project.version }}
 ```
 
 ## License
