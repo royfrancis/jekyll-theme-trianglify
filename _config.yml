@@ -22,15 +22,15 @@ links:
     - title: View on GitHub
       icon: github
       brand: true
-      url: https://github.com/royfrancis/trianglify
+      url: https://github.com/royfrancis/jekyll-theme-trianglify
   footer:
     - title: Trianglify
       icon: github
       brand: true
-      url: https://github.com/royfrancis/trianglify
+      url: https://github.com/royfrancis/jekyll-theme-trianglify
     - title: Issues
       icon: bug
-      url: https://github.com/royfrancis/trianglify/issues
+      url: https://github.com/royfrancis/jekyll-theme-trianglify/issues
 
 ui:
   mode: 'light' # 'auto', 'dark', 'light'
