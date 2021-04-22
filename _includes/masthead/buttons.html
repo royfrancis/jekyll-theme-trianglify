@@ -12,7 +12,7 @@
             %}
         {% endif %}
         
-        {% if site.links.homepage %}
+        {% if site.links.homepage.title %}
             {% for link in site.links.homepage %}
                 {% include masthead/button.html
                        url=link.url
