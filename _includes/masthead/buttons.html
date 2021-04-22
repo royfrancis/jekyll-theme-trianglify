@@ -11,15 +11,17 @@
                  title=button_text
             %}
         {% endif %}
-
-        {% for link in site.links.homepage %}
-            {% include masthead/button.html
-                   url=link.url
-                   icon=link.icon
-                   title=link.title
-                   brand=link.brand
-            %}
-        {% endfor %}
+        
+        {% if site.links.homepage %}
+            {% for link in site.links.homepage %}
+                {% include masthead/button.html
+                       url=link.url
+                       icon=link.icon
+                       title=link.title
+                       brand=link.brand
+                %}
+            {% endfor %}
+        {% endif %}
     </div>
 
     {% if site.project.version %}
