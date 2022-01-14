@@ -1,0 +1,9 @@
+<!-- alert -->
+
+{% if include.color %}
+ <div class=".alert .alert-{{ include.color }}">
+{% else %}
+ <div class=".alert">
+{% endif %}
+{{ include.content | markdownify | remove: '<p>' | remove: '</p>' }}
+</div>

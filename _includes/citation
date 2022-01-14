@@ -1,0 +1,5 @@
+<!-- citation -->
+
+{% if include.text %}
+  <span class="cite">{% if include.url %}<a href="{{ include.url }}">{% endif %}  {% if include.tip %}<abbr title="{{ include.tip }}">{% endif %}{{ include.text }}{% if include.tip %}</abbr>{% endif %}{% if include.url %}</a>{% endif %}</span>
+{% endif %}

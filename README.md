@@ -2,7 +2,7 @@
 
 A Jekyll theme based on [this](https://github.com/allejo/jekyll-docs-theme). View the demo [here](https://royfrancis.github.io/jekyll-theme-trianglify).
 
-![Theme Screenshot](./screenshot.png)
+![theme-screenshot](screenshot.png)
 
 To use this theme, add this line to your Jekyll site's `_config.yml`:
 

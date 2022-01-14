@@ -1,28 +1,28 @@
 name: Trianglify
 
 project:
-  version: 1.0.1
+  version:
   download_url:
   download_text:
 
 license:
-  software: MIT License
-  software_url: https://opensource.org/licenses/MIT
+  software:
+  software_url:
 
-  docs: CC BY 3.0
-  docs_url: https://creativecommons.org/licenses/by/3.0/
+  docs:
+  docs_url:
 
 links:
   header:
     - title:
       icon:
-      brand: false
+      brand:
       url:
   homepage:
-    - title: View on GitHub
-      icon: github
-      brand: true
-      url: https://github.com/royfrancis/jekyll-theme-trianglify
+    - title:
+      icon:
+      brand:
+      url:
   footer:
     - title: Trianglify
       icon: github
@@ -31,11 +31,15 @@ links:
     - title: Issues
       icon: bug
       url: https://github.com/royfrancis/jekyll-theme-trianglify/issues
+  logo:
+    src: /assets/logo.svg 
+    href: https://nbis.se/
+    alt: nbis-logo
 
 ui:
   mode: 'light' # 'auto', 'dark', 'light'
   brand:
-    dark: "#00ceff"
+    dark: "#4C979F"
     light: "#4C979F"
   border_color:
     dark: "#5f5f5f"
@@ -43,18 +47,66 @@ ui:
   header:
     trianglify: true
     dark:
-      color1: "#062a48"
-      color2: "#304e67"
+      color1: "#35696f"
+      color2: "#264b4f"
     light:
-      color1: "#81b6bb"
-      color2: "#4C979F"
+      color1: "#4C979F"
+      color2: "#6fabb2"
   masthead:
     color:
-      dark: "#fff"
+      dark: "#d8d8d8"
       light: "#fff"
     align:
       homepage: 'left'
       page: 'left'
+  toc:
+    highlight:
+      light: "#F7F7F7"
+      dark: "#3E3E3E"
+  alert:
+    light:
+      background:
+        green: "#dff0d8"
+        orange: "#fdf1e5"
+        yellow: "#fcf8e3"
+        red: "#f2dede"
+        blue: "#d9edf7"
+      border:
+        green: "#d6e9c6"
+        orange: "#fad7b2"
+        yellow: "#faebcc"
+        red: "#ebccd1"
+        blue: "#bce8f1"
+      text:
+        green: "#3c763d"
+        orange: "#bf6300"
+        yellow: "#8a6d3b"
+        red: "#a94442"
+        blue: "#31708f"
+    dark:
+      background:
+        green: "#b2c0ac"
+        orange: "#cac0b7"
+        yellow: "#c9c6b5"
+        red: "#c1b1b1"
+        blue: "#adbdc5"
+      border:
+        green: "#abba9e"
+        orange: "#c8ac8e"
+        yellow: "#c8bca3"
+        red: "#bca3a7"
+        blue: "#96b9c0"
+      text:
+        green: "#305e30"
+        orange: "#984f00"
+        yellow: "#6e572f"
+        red: "#873634"
+        blue: "#275972"
+
+custom-javascript-list:
+  - /assets/js/simplelightbox.js
+custom-css-list:
+  - /assets/css/simplelightbox.css
 
 social:
   github:

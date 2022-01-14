@@ -1,0 +1,17 @@
+.page-sidebar ul a.active,
+.page-sidebar ul a.active:focus,
+.page-sidebar ul a.active:hover {
+    @include themer(
+        background-color,
+        (
+            "dark": $site-ui-toc-highlight-dark,
+            "light": $site-ui-toc-highlight-light,
+        )
+    );
+}
+
+.page-sidebar {
+    font-size: 0.94em;
+    line-height: 1.2em;
+    margin-top: 3rem;
+}

@@ -57,11 +57,9 @@
                     </li>
                 {% endfor %}
 
-              <li class="nav-item" >
-                <a class="nav-link" href="https://nbis.se/">
-                  <img src="{{site.baseurl}}/assets/logo.png" alt="NBIS" class="logo">
-                </a>
-                </li>
+              {% if site.links.logo %}
+                {% include logo.html %}
+              {% endif %}
               </ul>
         </nav>
     </div>

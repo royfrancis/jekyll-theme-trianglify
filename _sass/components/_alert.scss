@@ -1,5 +1,144 @@
 .alert {
-    p:last-of-type {
-        margin-bottom: 0;
-    }
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px 4px 4px 0px;
+    padding: 10px 10px 0px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.alert {
+    @include themer(
+        background-color,
+        (
+            "light": $color-dark,
+            "dark": $color-light,
+        )
+    );
+    @include themer(
+        border-color,
+        (
+            "light": $site-ui-border-color-light,
+            "dark": $site-ui-border-color-dark,
+        )
+    );
+}
+
+.alert-green {
+    @include themer(
+        color,
+        (
+            "light": $site-ui-alert-light-text-green,
+            "dark": $site-ui-alert-dark-text-green,
+        )
+    );
+    @include themer(
+        background-color,
+        (
+            "light": $site-ui-alert-light-background-green,
+            "dark": $site-ui-alert-dark-background-green,
+        )
+    );
+    @include themer(
+        border-color,
+        (
+            "light": $site-ui-alert-light-border-green,
+            "dark": $site-ui-alert-dark-border-green,
+        )
+    );
+}
+
+.alert-orange {
+    @include themer(
+        color,
+        (
+            "light": $site-ui-alert-light-text-orange,
+            "dark": $site-ui-alert-dark-text-orange,
+        )
+    );
+    @include themer(
+        background-color,
+        (
+            "light": $site-ui-alert-light-background-orange,
+            "dark": $site-ui-alert-dark-background-orange,
+        )
+    );
+    @include themer(
+        border-color,
+        (
+            "light": $site-ui-alert-light-border-orange,
+            "dark": $site-ui-alert-dark-border-orange,
+        )
+    );
+}
+
+.alert-yellow {
+    @include themer(
+        color,
+        (
+            "light": $site-ui-alert-light-text-yellow,
+            "dark": $site-ui-alert-dark-text-yellow,
+        )
+    );
+    @include themer(
+        background-color,
+        (
+            "light": $site-ui-alert-light-background-yellow,
+            "dark": $site-ui-alert-dark-background-yellow,
+        )
+    );
+    @include themer(
+        border-color,
+        (
+            "light": $site-ui-alert-light-border-yellow,
+            "dark": $site-ui-alert-dark-border-yellow,
+        )
+    );
+}
+
+.alert-red {
+    @include themer(
+        color,
+        (
+            "light": $site-ui-alert-light-text-red,
+            "dark": $site-ui-alert-dark-text-red,
+        )
+    );
+    @include themer(
+        background-color,
+        (
+            "light": $site-ui-alert-light-background-red,
+            "dark": $site-ui-alert-dark-background-red,
+        )
+    );
+    @include themer(
+        border-color,
+        (
+            "light": $site-ui-alert-light-border-red,
+            "dark": $site-ui-alert-dark-border-red,
+        )
+    );
+}
+
+.alert-blue {
+    @include themer(
+        color,
+        (
+            "light": $site-ui-alert-light-text-blue,
+            "dark": $site-ui-alert-dark-text-blue,
+        )
+    );
+    @include themer(
+        background-color,
+        (
+            "light": $site-ui-alert-light-background-blue,
+            "dark": $site-ui-alert-dark-background-blue,
+        )
+    );
+    @include themer(
+        border-color,
+        (
+            "light": $site-ui-alert-light-border-blue,
+            "dark": $site-ui-alert-dark-border-blue,
+        )
+    );
 }

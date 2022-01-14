@@ -33,6 +33,8 @@ Do not remove this part. For most part, you only need to change `title` and `des
 
 Markdown formatting is supported. Here is a rundown of the available markdown formatting. Not all formatting maybe familiar markdown. Kramdown is the underlying engine.
 
+### Text
+
 Headings are added as such for H2, H3 etc..
 
 ```
@@ -45,7 +47,65 @@ H1 headings are reserved for page titles. Withing the document, start with H2 he
 
 Paragraphs are separated by a blank line.
 
-2nd paragraph. This `*ìtalic*` becomes *Italic*, this `**bold**` becomes **bold**, and this `` `monospace` `` becomes `monospace`.
+This is another paragraph. This `*ìtalic*` becomes *Italic*, this `**bold**` becomes **bold**, and this `` `monospace` `` becomes `monospace`.
+
+Block quotes are written like this.
+
+```
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
+```
+
+And they render like this:
+
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
+
+There are three different dashes. `-` becomes -. `--` becomes -- (en-dash) and `---` becomes --- (em-dash). Use 2 dashes for ranges (ex., "it's all in chapters `12--14` 12--14"). Three dots `...` will be converted to an ellipsis.
+
+Superscript like this `6<sup>th</sup>` looks like 6<sup>th</sup>.
+
+Subscript like this `H<sub>2</sub>O` looks like H<sub>2</sub>O.
+
+You can backslash-escape any punctuation characters which you wish to be displayed literally, ex.: `\` foo \`` becomes \` foo \` and `\*bar\*` becomes \*bar\*.
+
+Citations can be created as below.
+
+{% raw %}
+```
+{% include citation 
+text="Conesa Ana et al., 2016" 
+tip="Conesa, Ana, et al. A survey of best practices for RNA-seq data analysis. Genome biology 17.1 (2016): 13" 
+url="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8" 
+%}
+```
+{% endraw %}
+
+{% include citation 
+text="Conesa Ana et al., 2016" 
+tip="Conesa, Ana, et al. A survey of best practices for RNA-seq data analysis. Genome biology 17.1 (2016): 13" 
+url="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8" 
+%}
+
+A horizontal rule follows is created using `***`.
+
+***
+
+### Links
+
+Links like this `[a website](http://NBISweden.com/annotation/)` becomes [a website](http://NBISweden.com/annotation/). Local links like this `[this](services.html)` becomes [this](services.html). Links can also point to section headings. This `[section](#content)` looks like  [section](#content).
+
+Here's a footnote [^1].
+
+[^1]: Footnote text goes here.
+
+### Lists
 
 Itemized lists/Bullet points (Unordered list) looks like this
 
@@ -63,28 +123,46 @@ Here's a numbered list:
  2. second item
  3. third item
 
-Block quotes are written like this.
+Now a nested list:
 
-```
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-```
+ 1. First, get these ingredients:
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+      * carrots
+      * celery
+      * lentils
 
-There are three different dashes. `-` becomes -. `--` becomes -- (en-dash) and `---` becomes --- (em-dash). Use 2 dashes for ranges (ex., "it's all
-in chapters `12--14` 12--14"). Three dots ... will be converted to an ellipsis.
+ 2. Boil some water.
 
-...
+ 3. Dump everything in the pot and follow
+    this algorithm:
 
-Unicode is supported. ☺
+        find wooden spoon
+        uncover pot
+        stir
+        cover pot
+        balance wooden spoon precariously on pot handle
+        wait 10 minutes
+        goto first step (or shut off burner when done)
+
+    Do not bump wooden spoon or it will fall.
+
+Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).
+
+An example of a definition list
+
+apples
+  : Good for making applesauce.
+
+oranges
+  : Citrus!
+
+tomatoes
+  : There's no "e" in tomatoe.
+
+Again, text is indented 4 spaces. (Put a blank line between each term/definition pair to spread things out more.)
+
+### Code
 
 Code blocks can be created using triple backtick blocks or four space indents.
 
@@ -140,39 +218,9 @@ for i in range(10):
     print i
 ~~~
 
-Now a nested list:
+### Tables
 
- 1. First, get these ingredients:
-
-      * carrots
-      * celery
-      * lentils
-
- 2. Boil some water.
-
- 3. Dump everything in the pot and follow
-    this algorithm:
-
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Links like this `[a website](http://NBISweden.com/annotation/)` becomes [a website](http://NBISweden.com/annotation/). Local links like this `[this](services.html)` becomes [this](services.html). Links can also point to section headings. This `[section](#content)` looks like  [section](#content).
-
-Here's a footnote [^1].
-
-[^1]: Footnote text goes here.
-
-Tables can look like this:
+Tables are created like this:
 
 ```
 | size | material    | color       |
@@ -182,39 +230,47 @@ Tables can look like this:
 | 11   | glass       | transparent |
 ```
 
+And they render like this:
+
 | size | material    | color       |
 |:-----|:------------|:------------|
 | 9    | leather     | brown       |
 | 10   | hemp canvas | natural     |
 | 11   | glass       | transparent |
 
-A horizontal rule follows is created using `***`.
-
-***
-
-An example of a definition list
-
-apples
-  : Good for making applesauce.
-
-oranges
-  : Citrus!
-
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each term/definition pair to spread things out more.)
+### Images
 
 Images can be specified like so:
 
-![example image](https://i.picsum.photos/id/237/200/300.jpg)
+`![example image](https://images.unsplash.com/photo-1496284575094-d5b92db3890d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80)`
+
+![example image](https://images.unsplash.com/photo-1496284575094-d5b92db3890d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80)
+
+Local images are displayed similarly.
+
+`![](image.jpg)`
+
+![](image.jpg)
+
+Image with lightbox
+
+`{% raw %}{% include figure path="image.jpg" %}{% endraw %}`
+
+{% include figure path="image.jpg" %}
+
+Image with lightbox and caption
+
+`{% raw %}{% include figure path="image.jpg" caption="Kitty kitty kitty" %}{% endraw %}`
+
+{% include figure path="image.jpg" caption="Kitty kitty kitty" %}
+
+### Icons
 
 Add icons from [FontAwesome](https://fontawesome.com).
 
-* `<i class="fas fa-flag"></i>` <i class="fas fa-flag"></i>.
+* `<i class="fas fa-flag"></i>` <i class="fas fa-flag"></i>
 * `<i class="fas fa-exclamation-circle"></i>` <i class="fas fa-exclamation-circle"></i>  
 * `<i class="fas fa-exclamation-triangle"></i>` <i class="fas fa-exclamation-triangle"></i>  
 * `<i class="fas fa-info-circle"></i>` <i class="fas fa-info-circle"></i>  
 
-Superscript like this `6<sup>th</sup>` looks like 6<sup>th</sup>. Subscript like this `H<sub>2</sub>O` looks like H<sub>2</sub>O. You can backslash-escape any punctuation characters which you wish to be displayed literally, ex.: `\` foo \`` becomes \` foo \` and `\*bar\*` becomes \*bar\*.
-
+Unicode is supported. ☺

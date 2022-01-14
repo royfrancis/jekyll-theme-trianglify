@@ -1,5 +1,5 @@
 blockquote {
-    @include themer(border-bottom-color, (
+    @include themer(border-color, (
         'dark': $site-ui-border-color-dark,
         'light': $site-ui-border-color-light,
     ));
@@ -9,11 +9,23 @@ blockquote {
         'light': rgba($color-light, 60%),
     ));
 
+    border-width: 1px;
+    border-style: solid;
     border-left-style: solid;
     border-left-width: 4px;
     padding: 0.5rem 1.25rem;
+    display: inline-block;
+    border-radius: 4px;
 
     *:last-child {
         margin-bottom: 0;
     }
 }
+
+blockquote::before {
+    content: '"';
+    font-size: 200%;
+    position: absolute;
+    margin-left: -29px;
+    margin-top: -6px;
+  }

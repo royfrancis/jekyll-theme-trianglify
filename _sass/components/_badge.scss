@@ -1,0 +1,52 @@
+.tool,
+.cite {
+    @include themer(
+        background-color,
+        (
+            "dark": $color-light,
+            "light": $color-dark,
+        )
+    );
+    @include themer(
+        color,
+        (
+            "dark": $color-dark,
+            "light": $color-light,
+        )
+    );
+    display: inline;
+    font-size: 0.95rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.tool a,
+.cite a, {
+    @include themer(
+        color,
+        (
+            "dark": $color-dark,
+            "light": $color-light,
+        )
+    ); 
+}
+
+.tool::before,
+.cite::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.tool::before {
+    content: "\f1b2";
+    font-size: 1.1rem;
+}
+
+.cite::before {
+    content: "\f02e";
+    font-size: 0.7rem;
+}
