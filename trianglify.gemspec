@@ -19,4 +19,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 3.5"
   spec.add_development_dependency "bundler", "~> 2.1"
+  spec.add_development_dependency "kramdown-parser-gfm", "~> 1.0"
 end
