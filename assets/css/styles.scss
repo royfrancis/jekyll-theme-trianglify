@@ -3,14 +3,14 @@
 
 $site-ui-mode: {{ site.ui.mode | default: 'auto' }};
 
-$site-ui-brand-dark: {{ site.ui.brand.dark | default: '#95b540' }};
+$site-ui-brand-dark: {{ site.ui.brand.dark | default: '#9fbc53' }};
 $site-ui-brand-light: {{ site.ui.brand.light | default: '#95b540' }};
 
 $site-ui-border-color-dark: {{ site.ui.border_color.dark | default: '#5f5f5f' }};
 $site-ui-border-color-light: {{ site.ui.border_color.light | default: '#dee2e6' }};
 
-$site-ui-header-dark-color1: {{ site.ui.header.dark.color1 | default: '#96b43f' }};
-$site-ui-header-dark-color2: {{ site.ui.header.dark.color2 | default: '#85a038' }};
+$site-ui-header-dark-color1: {{ site.ui.header.dark.color1 | default: '#86a239' }};
+$site-ui-header-dark-color2: {{ site.ui.header.dark.color2 | default: '#687e2c' }};
 $site-ui-header-light-color1: {{ site.ui.header.light.color1 | default: '#96b43f' }};
 $site-ui-header-light-color2: {{ site.ui.header.light.color2 | default: '#85a038' }};
 

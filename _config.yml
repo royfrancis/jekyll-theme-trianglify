@@ -53,15 +53,15 @@ ui:
       color2: "#85a038"
   masthead:
     color:
-      dark: "#fff"
-      light: "#fff"
+      dark:
+      light:
     align:
-      homepage: 'left'
-      page: 'left'
+      homepage:
+      page:
   toc:
     highlight:
-      light: "#F7F7F7"
-      dark: "#3E3E3E"
+      light:
+      dark:
   alert:
     light:
       background:
