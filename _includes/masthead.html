@@ -1,6 +1,6 @@
 {% capture alignment_class -%}
     {%- if page.homepage -%}
-        text-{{ site.ui.masthead.align.homepage | default: 'center' }}
+        text-{{ site.ui.masthead.align.homepage | default: 'left' }}
     {%- else -%}
         text-{{ site.ui.masthead.align.page | default: 'left' }}
     {%- endif -%}

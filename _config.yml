@@ -57,56 +57,15 @@ ui:
       dark: "#d8d8d8"
       light: "#fff"
     align:
-      homepage: 'left'
-      page: 'left'
+      homepage:
+      page:
   toc:
     highlight:
-      light: "#F7F7F7"
-      dark: "#3E3E3E"
-  alert:
-    light:
-      background:
-        green: "#dff0d8"
-        orange: "#fdf1e5"
-        yellow: "#fcf8e3"
-        red: "#f2dede"
-        blue: "#d9edf7"
-      border:
-        green: "#d6e9c6"
-        orange: "#fad7b2"
-        yellow: "#faebcc"
-        red: "#ebccd1"
-        blue: "#bce8f1"
-      text:
-        green: "#3c763d"
-        orange: "#bf6300"
-        yellow: "#8a6d3b"
-        red: "#a94442"
-        blue: "#31708f"
-    dark:
-      background:
-        green: "#b2c0ac"
-        orange: "#cac0b7"
-        yellow: "#c9c6b5"
-        red: "#c1b1b1"
-        blue: "#adbdc5"
-      border:
-        green: "#abba9e"
-        orange: "#c8ac8e"
-        yellow: "#c8bca3"
-        red: "#bca3a7"
-        blue: "#96b9c0"
-      text:
-        green: "#305e30"
-        orange: "#984f00"
-        yellow: "#6e572f"
-        red: "#873634"
-        blue: "#275972"
+      light:
+      dark:
 
 custom-javascript-list:
-  - /assets/js/simplelightbox.js
 custom-css-list:
-  - /assets/css/simplelightbox.css
 
 social:
   github:
