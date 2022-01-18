@@ -45,6 +45,13 @@ Headings are added as such for H2, H3 etc..
 
 H1 headings are reserved for page titles. Withing the document, start with H2 headings.
 
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
 Paragraphs are separated by a blank line.
 
 This is another paragraph. This `*ìtalic*` becomes *Italic*, this `**bold**` becomes **bold**, and this `` `monospace` `` becomes `monospace`.
