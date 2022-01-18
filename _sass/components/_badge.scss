@@ -15,12 +15,13 @@
         )
     );
     display: inline;
-    font-size: 0.95rem;
-    padding: 2px 8px;
+    font-size: 0.85rem;
+    padding: 4px 8px;
     border-radius: 4px;
     text-align: center;
     vertical-align: middle;
     margin-right: 0.5em;
+    font-weight: 600;
 }
 
 .tool a,
@@ -43,10 +44,11 @@
 
 .tool::before {
     content: "\f1b2";
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 .cite::before {
     content: "\f02e";
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    vertical-align: baseline;
 }
