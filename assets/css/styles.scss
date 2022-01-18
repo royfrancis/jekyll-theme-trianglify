@@ -249,10 +249,20 @@ figure {
   margin: 1em 0 1em 0;
 }
 
-figure a,
+figure a {
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  text-decoration: none;
+}
+
 figure a:hover,
 figure a:focus,
 figure a:visited {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
   text-decoration: none;
 }
 
