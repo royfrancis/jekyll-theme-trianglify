@@ -163,14 +163,14 @@ p {
 .scope-markdown h2 {
   border: none;
   margin-bottom: 0.1em;
-  margin-top: 0.2em;
+  margin-top: 1em;
   padding-bottom: 0;
 }
 
 .scope-markdown h3 {
   border: none;
   margin-bottom: 0.05em;
-  margin-top: 0.1em;
+  margin-top: 1em;
 }
 
 .scope-markdown h4,
@@ -178,7 +178,7 @@ p {
 .scope-markdown h6 {
   border: none;
   margin-bottom: 0.03em;
-  margin-top: 0em;
+  margin-top: 0.8em;
 }
 
 .site-footer__summary p {
@@ -187,6 +187,7 @@ p {
 
 blockquote {
   margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* code style */
@@ -214,7 +215,7 @@ code {
   margin-left: -0.8em;
   padding-right: 0em;
   font-size: 0.8em;
-  line-height: 1.9em;
+  line-height: 1.5em;
   color: #999;
   transition: opacity 0.1s ease-in-out;
 }
